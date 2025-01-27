@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="Comparativo de Câmeras, câmeras, DSLR, Mirrorless, tecnologias, fotografia" />
+    <meta name="author" content="Canon do Brasil - Comparativo de Câmeras" />
+    <title>Canon - Comparativo de Câmeras</title>
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+  </head>
+  <style>
+    .area-para-pdf {
+      padding: 1px;
+      margin: 1px;
+    }
+  </style>
+  <body>
+    <div id="areaPDF" class="area-para-pdf">
+      <script src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/library.js"></script>
+      <header>
+        <img src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/canon-logo.svg" />
+      </header>
+
+      <section id="logo-container">
+        <div class="container-fluid">
+          <div class="row" style="flex-direction: column; align-items: center">
+            <div class="col-12 header-grid">
+              <img src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/comparativo-logo.png" style="width: 350px; max-width: 100%; height: auto" alt="Logo comparativo de câmeras" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <div class="container-fluid">
+          <div class="step1">
+            <div class="row">
+              <div class="col-12 flex-center">
+                <div class="box-information-desk">
+                  <div class="box-information-text">
+                    <h1>Descubra a Canon Perfeita para você com Nosso Comparador Inteligente</h1>
+                    <h2>Nossa ferramenta compara instantaneamente as especificações de diferentes câmeras fotográficas, ajudando você a escolher o equipamento ideal em segundos.</h2>
+                    <h2>Para fotógrafos profissionais ou iniciantes, nosso comparador analisa resolução, qualidade de imagem e outras especificações, garantindo que você encontre a câmera que combina perfeitamente com seu estilo e orçamento.</h2>
+                    <div class="button" onclick="nextStep2()">Vamos começar ></div>
+                  </div>
+                </div>
+                <div class="box-information-mobile">
+                  <div class="box-information-imagem-mobile">
+                    <img src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/background-info-mobile.jpg" width="100%" />
+                  </div>
+                  <div class="box-information-text-mobile">
+                    <h1>Descubra a Canon Perfeita para você com Nosso Comparador Inteligente</h1>
+                    <h2>Nossa ferramenta compara instantaneamente as especificações de diferentes câmeras fotográficas, ajudando você a escolher o equipamento ideal em segundos.</h2>
+                    <h2>Para fotógrafos profissionais ou iniciantes, nosso comparador analisa resolução, qualidade de imagem e outras especificações, garantindo que você encontre a câmera que combina perfeitamente com seu estilo e orçamento.</h2>
+                    <div class="button" onclick="nextStep2()">Vamos começar ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step2 hide">
+            <div class="row">
+              <div class="col-12 flex-center">
+                <div class="box-information">
+                  <div class="box-information-header">
+                    <h1>Selecione os modelos que deseja comparar</h1>
+                  </div>
+                  <form>
+                    <div class="box-information-compare">
+                      <div class="compare-itens">
+                        <div class="item-box">
+                          <img src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/camera-silhueta.png" alt="" class="bg-silhueta camera-item-1" />
+                          <input type="text" class="input-item-name camera1" placeholder="Pesquisar" onkeyup="changeCamera1()" />
+                        </div>
+                        <div class="item-box">
+                          <img src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/camera-silhueta.png" alt="" class="bg-silhueta camera-item-2" />
+                          <input type="text" class="input-item-name camera2" placeholder="Pesquisar" onkeyup="changeCamera2()" />
+                        </div>
+                        <div class="item-box">
+                          <img src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/camera-silhueta.png" alt="" class="bg-silhueta camera-item-3" />
+                          <input type="text" class="input-item-name camera3" placeholder="Pesquisar" onkeyup="changeCamera3()" />
+                        </div>
+                      </div>
+                      <div class="botoes">
+                        <div class="button" onclick="refresh()">< Voltar</div>
+                        <div class="button" onclick="searchCameras()">Ver resultado ></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step3 hide">
+            <div class="row flex-center">
+              <div class="col-12">
+                <div class="box-information">
+                  <div class="box-information-header">
+                    <h1>Veja o comparativo das Câmeras:</h1>
+                  </div>
+                  <div class="box-information-compare">
+                    <table id="camera-table"></table>
+                  </div>
+                </div>
+                <div class="botoes">
+                  <div class="button" onclick="refresh()">Refazer ></div>
+
+                  <button id="generate-pdf">Gerar PDF</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="footer">
+        <div class="container">
+          <div class="row row-flex">
+            <div class="col-12 footer-grid">
+              <div class="footer-info">
+                <p class="footer-text"></p>
+                <a href="https://www.privacidade.com.br/portal-de-privacidade?token=9f891d946ed5adada7f6b000eb0bcdd8" target="_blank"> LGPD - Exerça seus direitos </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="scripts-box">
+      <script>
+        const camera1Input = document.querySelector('.camera1');
+        const camera2Input = document.querySelector('.camera2');
+        const camera3Input = document.querySelector('.camera3');
+        const submitButton = document.querySelector('.button');
+
+        const refresh = () => {
+          window.location.replace(location.pathname);
+        };
+      </script>
+      <script src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/js/camera-handler.js"></script>
+      <script src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/js/url-handler.js"></script>
+      <script src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/js/main.js"></script>
+      <script src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/js/table-handler.js"></script>
+      <script src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/js/drag-scroll.js"></script>
+      <script src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/js/page-load.js"></script>
+      <script src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/js/fixed-rows.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+      <script>
+        document.getElementById('generate-pdf').addEventListener('click', async () => {
+          try {
+            // Show loading
+            const button = document.getElementById('generate-pdf');
+            button.textContent = 'Gerando PDF...';
+            button.disabled = true;
+
+            // Ensure the element is visible
+            const element = document.querySelector('.step3');
+            element.classList.remove('hide');
+
+            // Wait for a short time to ensure the element is fully rendered
+            await new Promise((resolve) => setTimeout(resolve, 500));
+
+            // Log element dimensions
+            const rect = element.getBoundingClientRect();
+            console.log('Element dimensions:', rect.width, rect.height);
+
+            // Configure html2canvas
+            const canvas = await html2canvas(element, {
+              scale: 2,
+              useCORS: true,
+              logging: true,
+              backgroundColor: '#ffffff',
+              windowWidth: 1300,
+            });
+
+            // Check canvas dimensions
+            console.log('Canvas dimensions:', canvas.width, canvas.height);
+
+            // Create PDF
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF({
+              orientation: 'portrait',
+              unit: 'mm',
+              format: 'a4',
+            });
+
+            // A4 dimensions (mm)
+            const pageWidth = 210;
+            const pageHeight = 297;
+            const margin = 10;
+
+            // Calculate dimensions maintaining aspect ratio
+            const imgWidth = pageWidth - margin * 2;
+            const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+            // Create temporary canvas for each row
+            const rows = element.querySelectorAll('tr');
+            let currentPageHeight = margin;
+
+            for (let row of rows) {
+              const rowCanvas = await html2canvas(row, {
+                scale: 2,
+                useCORS: true,
+                logging: true,
+                backgroundColor: '#ffffff',
+                windowWidth: 1300,
+              });
+
+              const rowHeight = (rowCanvas.height * imgWidth) / rowCanvas.width;
+
+              // Check if the row fits in the current page
+              if (currentPageHeight + rowHeight > pageHeight - margin) {
+                pdf.addPage();
+                currentPageHeight = margin;
+              }
+
+              const rowImgData = rowCanvas.toDataURL('image/jpeg', 1.0);
+              pdf.addImage(rowImgData, 'JPEG', margin, currentPageHeight, imgWidth, rowHeight);
+
+              currentPageHeight += rowHeight;
+            }
+
+            // Save PDF
+            pdf.save('comparativo-cameras.pdf');
+          } catch (error) {
+            console.error('Erro ao gerar PDF:', error);
+            alert('Erro ao gerar PDF. Por favor, tente novamente.');
+          } finally {
+            const button = document.getElementById('generate-pdf');
+            button.textContent = 'Gerar PDF';
+            button.disabled = false;
+          }
+        });
+      </script>
+
+      <script>
+        const dataAtual = new Date();
+        const anoAtual = dataAtual.getFullYear();
+        document.querySelector('.footer-text').innerHTML = `CANON DO BRASIL - ${anoAtual}`;
+      </script>
+    </div>
+  </body>
+</html>
