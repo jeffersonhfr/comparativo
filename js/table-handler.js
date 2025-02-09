@@ -48,9 +48,9 @@ function generateTable(data) {
   // Função para formatar o conteúdo da célula
   const formatCellContent = (value, spec) => {
     if (value === 'SIM') {
-      return `<img src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/sim.png" alt="Sim" style="width: 48px; height: 48px;">`;
+      return `<img src="https://jeffersonhfr.github.io/comparativo/image/sim.png" alt="Sim" style="width: 48px; height: 48px;">`;
     } else if (value === 'NÃO') {
-      return `<img src="https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/nao.png" alt="Não" style="width: 48px; height: 48px;">`;
+      return `<img src="https://jeffersonhfr.github.io/comparativo/image/nao.png" alt="Não" style="width: 48px; height: 48px;">`;
     }
     if (spec === 'Manual' && value && value.startsWith('http')) {
       return `<a href="${value}" target="_blank" style="color:rgb(0, 132, 255); text-decoration: none;">Acessar Manual</a>`;

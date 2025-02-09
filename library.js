@@ -1,6 +1,6 @@
 let camerasGerais = [
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr100.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr100.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/camera-eos-R100-com-rf-s-18-45mm',
     Modelo: 'EOS R100',
     'Ano lançamento (Câmera)': '2023',
@@ -114,7 +114,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '353,8 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr50.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr50.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/camera-EOS-R50-Lente-RF-S-18-45mm',
     Modelo: 'EOS R50',
     'Ano lançamento (Câmera)': '2023',
@@ -228,7 +228,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '362,87 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr10.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr10.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/Camera-EOS-R10-CORPO-BR',
     Modelo: 'EOS R10',
     'Ano lançamento (Câmera)': '2022',
@@ -342,7 +342,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '426,38 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosrp.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosrp.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/Camera-EOS-RP-CorpoBR',
     Modelo: 'EOS RP',
     'Ano lançamento (Câmera)': '2019',
@@ -456,7 +456,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '484,78 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr8.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr8.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/camera-EOS-R8-corpo',
     Modelo: 'EOS R8',
     'Ano lançamento (Câmera)': '2023',
@@ -570,7 +570,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '453,59 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr7.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr7.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/Camera-EOS-R7-CORPO-BR',
     Modelo: 'EOS R7',
     'Ano lançamento (Câmera)': '2022',
@@ -684,7 +684,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '589,67 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr.jpg',
     URL:'http://',
     Modelo: 'EOS R',
     'Ano lançamento (Câmera)': '2018',
@@ -798,7 +798,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '660,54 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr6.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr6.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/Camera-Miroless-Canon-EOS-R6',
     Modelo: 'EOS R6',
     'Ano lançamento (Câmera)': '2020',
@@ -912,7 +912,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '680,11 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr6m2.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr6m2.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/camera-eos-r6-mark-ii-corpo',
     Modelo: 'EOS R6 Mark II',
     'Ano lançamento (Câmera)': '2023',
@@ -1026,7 +1026,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '771,11 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr5.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr5.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/Camera-Miroless-Canon-EOS-R5',
     Modelo: 'EOS R5',
     'Ano lançamento (Câmera)': '2020',
@@ -1140,7 +1140,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '737,94 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr5m2.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr5m2.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/camera-eos-r5-mark-ii-corpo',
     Modelo: 'EOS R5 Mark II',
     'Ano lançamento (Câmera)': '2024',
@@ -1254,7 +1254,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '680.38 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr3.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr3.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/eos-r3-corpo-br',
     Modelo: 'EOS R3',
     'Ano lançamento (Câmera)': '2021',
@@ -1368,7 +1368,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '1014,91 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosr1.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosr1.jpg',
     URL:'http://',
     Modelo: 'EOS R1',
     'Ano lançamento (Câmera)': '2024',
@@ -1482,7 +1482,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '1133 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosm200.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosm200.jpg',
     URL:'http://',
     Modelo: 'EOS M200',
     'Ano lançamento (Câmera)': '2019',
@@ -1596,7 +1596,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '299,09 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosm50m2.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosm50m2.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/Kit-Camera-EOS-M50-MARK-II',
     Modelo: 'EOS M50 Mark II',
     'Ano lançamento (Câmera)': '2020',
@@ -1710,7 +1710,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '386,97 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eosm6m2.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eosm6m2.jpg',
     URL:'http://',
     Modelo: 'EOS M6 Mark II',
     'Ano lançamento (Câmera)': '2019',
@@ -1824,7 +1824,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '408,23 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eost100.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eost100.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/camera-eos-rebe-t100-com-lente-efs-18-55mm',
     Modelo: 'EOS Rebel T100',
     'Ano lançamento (Câmera)': '2018',
@@ -1938,7 +1938,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '435,45 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eost7plus.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eost7plus.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon-eos-dslr/eos-rebel-t7plus-ef-s-18-55-is-ii-us',
     Modelo: 'EOS Rebel T7+',
     'Ano lançamento (Câmera)': '2018',
@@ -2052,7 +2052,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '476,27 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eossl3.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eossl3.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon-eos-dslr/camera-eos-sl3-com-lente-ef-s-18-55-is-stm-us',
     Modelo: 'EOS Rebel SL3',
     'Ano lançamento (Câmera)': '2019',
@@ -2166,7 +2166,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '663,38 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eost8i.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eost8i.jpg',
     URL:'https://www.loja.canon.com.br/ProductDisplay?urlRequestType=Base&catalogId=12251&categoryId=68501&productId=1981001&errorViewName=ProductDisplayErrorView&urlLangId=-6&langId=-6&top_category=&parent_category_rn=&storeId=11801',
     Modelo: 'EOS Rebel T8i',
     'Ano lançamento (Câmera)': '2020',
@@ -2280,7 +2280,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '515,11 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eos90d.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eos90d.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon/camera-EOS-90D-Corpo',
     Modelo: 'EOS 90D',
     'Ano lançamento (Câmera)': '2019',
@@ -2394,7 +2394,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '700,23 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eos6dm2.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eos6dm2.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon-eos-dslr/eos-6d-mark-ii-corpo',
     Modelo: 'EOS 6D Mark II',
     'Ano lançamento (Câmera)': '2017',
@@ -2508,7 +2508,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '765,44 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eos5dm4.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eos5dm4.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon-eos-dslr/eos-5d-mark-iv',
     Modelo: 'EOS 5D Mark IV',
     'Ano lançamento (Câmera)': '2016',
@@ -2622,7 +2622,7 @@ let camerasGerais = [
     'Peso - Produto (c/ bateria e cartão)': '799,46 g',
   },
   {
-    Imagem: 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/eos1dxm3.jpg',
+    Imagem: 'https://jeffersonhfr.github.io/comparativo/image/eos1dxm3.jpg',
     URL:'https://www.loja.canon.com.br/pt/canonbr/cameras-canon/cameras-canon-eos-dslr/eos-1dx-mkiii-corpo',
     Modelo: 'EOS 1D-X Mark III',
     'Ano lançamento (Câmera)': '2020',

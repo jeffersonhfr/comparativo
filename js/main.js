@@ -69,7 +69,7 @@ function setupCameraSelection(input, inputNumber) {
   tomSelect.updateImage = function () {
     const image = document.querySelector(`.camera-item-${inputNumber}`);
     const selectedCamera = findCameraByName(input.value);
-    image.src = selectedCamera ? selectedCamera.Imagem : 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/camera-silhueta.png';
+    image.src = selectedCamera ? selectedCamera.Imagem : 'https://jeffersonhfr.github.io/comparativo/image/camera-silhueta.png';
   };
 
   return tomSelect;
@@ -107,13 +107,13 @@ function changeCamera(inputNumber) {
 
     if (isDuplicateModel) {
       window.cameraSelects[inputNumber - 1].clear();
-      image.src = 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/camera-silhueta.png';
+      image.src = 'https://jeffersonhfr.github.io/comparativo/image/camera-silhueta.png';
       alert(`Este modelo (${selectedCamera.Modelo}) já está selecionado. \n\nAlguns equipamentos possuem outros nomes dependendo do continente em que é comercializado.`);
       return;
     }
   }
 
-  image.src = selectedCamera ? selectedCamera.Imagem : 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/image/camera-silhueta.png';
+  image.src = selectedCamera ? selectedCamera.Imagem : 'https://jeffersonhfr.github.io/comparativo/image/camera-silhueta.png';
 }
 
 function searchCameras() {
