@@ -3,7 +3,7 @@ html {
 
   body {
     scroll-behavior: smooth;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -32,6 +32,9 @@ html {
       display: flex;
       justify-content: center;
     }
+  }
+  img.clicable {
+    cursor: pointer;
   }
 }
 header {
@@ -117,7 +120,7 @@ main {
           color: #cc0000;
         }
         h2 {
-          color: #7c7c7c;
+          color: #3e3e3e;
           font-weight: 400;
           font-size: 18px;
           line-height: 23px;
@@ -132,7 +135,7 @@ main {
           padding: 8px 50px;
           width: fit-content;
           cursor: pointer;
-          font-family: 'Avenir';
+          font-family: "Ubuntu", sans-serif;
           font-style: normal;
           font-weight: 900;
           font-size: 16px;
@@ -169,7 +172,7 @@ main {
           color: #cc0000;
         }
         h2 {
-          color: #7c7c7c;
+          color: #3e3e3e;
           font-weight: 400;
           font-size: 18px;
           line-height: 23px;
@@ -184,7 +187,7 @@ main {
           padding: 8px 50px;
           width: fit-content;
           cursor: pointer;
-          font-family: 'Avenir';
+          font-family: "Ubuntu", sans-serif;
           font-style: normal;
           font-weight: 900;
           font-size: 16px;
@@ -218,7 +221,7 @@ main {
       }
       .box-information-header {
         h1 {
-          font-family: 'Ubuntu';
+          font-family: "Ubuntu", sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
@@ -304,7 +307,7 @@ main {
           padding: 8px 24px;
           width: fit-content;
           cursor: pointer;
-          font-family: 'Avenir';
+          font-family: "Ubuntu", sans-serif;
           font-style: normal;
           font-weight: 900;
           font-size: 15px;
@@ -361,7 +364,7 @@ main {
         width: 100%;
 
         h1 {
-          font-family: 'Ubuntu';
+          font-family: "Ubuntu", sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
@@ -604,7 +607,7 @@ main {
       padding: 8px 32px;
       width: fit-content;
       cursor: pointer;
-      font-family: 'Avenir';
+      font-family: "Ubuntu", sans-serif;
       font-style: normal;
       font-weight: 900;
       font-size: 15px;
@@ -664,10 +667,13 @@ main {
       padding: 16px !important;
       text-align: left !important;
       margin-top: 32px;
-      border-radius: 4px;
       font-size: 16px;
       text-transform: uppercase;
       letter-spacing: 0.6px;
+    }
+
+    .spec-category-header1 {
+      background-color: #ffffff !important;
     }
 
     /* .spec-category-header:nth-child(1){
@@ -815,7 +821,7 @@ footer {
   color: #fff;
   padding: 10px 0 20px;
   text-align: center;
-  font-family: 'Ubuntu Condensed';
+  font-family: 'Ubuntu Condensed', 'ubuntu', sans-serif;
   a {
     color: #fff !important;
     line-height: 24px;
@@ -853,8 +859,8 @@ td.empty-row {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content {
   position: absolute;
@@ -866,7 +872,7 @@ td.empty-row {
   background-color: white;
   border-radius: 10px;
   text-align: center;
-  p{
+  p {
     margin-top: 16px;
   }
 }
@@ -880,6 +886,34 @@ td.empty-row {
   margin: 0 auto;
 }
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spec-category-header {
+  position: sticky;
+  position: -webkit-sticky; /* Para Safari */
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 15;
+  white-space: nowrap;
+
+  .title-category {
+    position: sticky;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    text-align: center;
+    width: auto;
+  }
+}
+
+/* Ajuste para garantir que o título não seja cortado */
+.box-information-compare table td[colspan] {
+  white-space: normal;
 }

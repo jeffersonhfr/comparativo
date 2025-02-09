@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-MXJBGBBZ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canon - Comparativo de Câmeras</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJBGBBZ" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      #camera-comparator {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+    </style>
+    <iframe id="camera-comparator" src="" style="width: 100%; height: 100vh; border: none; margin: 0; padding: 0"></iframe>
+    <script>
+      // Função para atualizar o src do iframe com os parâmetros de URL
+      function updateIframeSrc() {
+        const params = new URLSearchParams(window.location.search);
+        const iframe = document.getElementById('camera-comparator');
+        const baseUrl = 'https://extranet.canon.com.br/ecommerce/_files/comparativo-camera/index.html'; // Substitua pela URL do seu index.html
+        iframe.src = `${baseUrl}?${params.toString()}`;
+      }
+
+      // Função para atualizar a query string da URL da janela principal
+      function updateParentURL(newURL) {
+        const newQueryString = new URL(newURL).search;
+        const newRelativePathQuery = window.location.pathname + newQueryString;
+        window.history.pushState({}, '', newRelativePathQuery);
+      }
+
+      // Adiciona um evento de escuta para receber mensagens do iframe
+      window.addEventListener('message', function (event) {
+        if (event.origin === 'https://extranet.canon.com.br') {
+          // Substitua pela origem correta
+          const newURL = event.data;
+          updateParentURL(newURL);
+        }
+      });
+
+      // Chame a função para atualizar o src do iframe
+      updateIframeSrc();
+      
+    </script>
+  </body>
+</html>

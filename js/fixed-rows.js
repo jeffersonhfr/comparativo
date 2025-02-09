@@ -139,6 +139,28 @@ function initFixedRows() {
     }
   });
 
+function updateCategoryHeaders() {
+  const categoryHeaders = document.querySelectorAll('.spec-category-header');
+  const container = document.querySelector('.box-information-compare');
+  
+  if (!container) return;
+
+  categoryHeaders.forEach(header => {
+    const titleSpan = header.querySelector('.title-category');
+    if (!titleSpan) return;
+
+    const containerWidth = container.clientWidth;
+    const scrollLeft = container.scrollLeft;
+    const centerPosition = containerWidth / 2 + scrollLeft;
+
+    titleSpan.style.transform = `translateX(${-scrollLeft}px)`;
+    titleSpan.style.left = '50%';
+  });
+}
+  
+  // Adicione o listener de scroll
+  document.querySelector('.box-information-compare')?.addEventListener('scroll', updateCategoryHeaders);
+  
   // Update on window resize
   window.addEventListener('resize', updateColumnWidths);
 
